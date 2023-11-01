@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BON APPETIT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: transparent;
+            color: white;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 25vh;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 50px;
+            font-family: 'Dancing Script', cursive;
+            color: black;
+        }
+
+        .hero {
+            background-color: white;
+            text-align: center;
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .section {
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            color: black;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.1);
+        }
+
+        .section img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+        }
+
+        .section p {
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .image-container {
+            display: flex;
+        }
+
+        .image-container img {
+            max-width: 33.33%;
+        }
+
+        /* 모바일 환경에서 적용할 스타일 */
+        @media screen and (max-width: 600px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .section {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .section img {
+                height: auto; /* 이미지의 높이를 원본 비율에 맞게 조정 */
+            }
+
+            .section p {
+                font-size: 20px; /* 글자 크기 조정 */
+            }
+
+            .image-container img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="image-container">
+            <img src="https://img.freepik.com/premium-vector/mexico-icons-carnival-cinco-de-mayo_202271-1567.jpg" alt="Image description">
+            <img src="https://img.freepik.com/premium-vector/fast-food-set-in-cartoon-style_418367-74.jpg?w=2000" alt="Image description">
+            <img src="https://img.freepik.com/free-vector/set-of-japanese-food-isolated-on-white-background-graphic-design-icon-set-for-advertisement-vector-illustration_1150-55323.jpg?w=1800&t=st=1698807488~exp=1698808088~hmac=e521dbe235478f9edc951af779369443463716d36f97de5f6da74da0550f916f" alt="Image description">
+        </div>
+        <h1>BON APPETIT</h1>
+    </div>
+    <div class="hero">
+        <a class="section" href="korean.html">
+            <img src="https://img.freepik.com/premium-photo/a-table-full-of-korean-food-including-a-fried-egg-and-other-dishes_899945-319.jpg?w=1060" alt="Korean Food">
+            <p>한식</p>
+        </a>
+        <a class="section" href="japanese.html">
+            <img src="https://img.freepik.com/free-photo/high-angle-delicious-food-still-life_23-2149325291.jpg?w=1800&t=st=1698810467~exp=1698811067~hmac=0a2aaaabfec264e7680ce744c5e49f572400796e2c658647d6588ae9ba1a928f" alt="Japanese Food">
+            <p>일식</p>
+        </a>
+        <a class="section" href="chinese.html">
+            <img src="https://img.freepik.com/free-photo/korean-food-jajangmyeon-or-noodle-with-fermented-black-beans-sauce_1150-42845.jpg?w=1800&t=st=1698810538~exp=1698811138~hmac=87c8e9c5ab7100022820b22397105b5e28a650db45dd07837707244a98a8b6fb" alt="Chinese Food">
+            <p>중식</p>
+        </a>
+        <a class="section" href="western.html">
+            <img src="https://img.freepik.com/free-photo/juicy-steak-medium-rare-beef-with-spices-and-grilled-vegetables_24972-2327.jpg?w=1800&t=st=1698810584~exp=1698811184~hmac=edc2dd1c4bf664b3f345986abc6bde286397b3d0f05b925ccb633949755d086c" alt="Western Food">
+            <p>양식</p>
+        </a>
+    </div>
+</body>
+</html>
